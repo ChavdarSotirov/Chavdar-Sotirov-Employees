@@ -72,13 +72,9 @@ function App() {
       Object.keys(daysTogether).reduce((a, b) =>
         daysTogether[a] > daysTogether[b] ? a : b
       )
-    ] : ["No pairs"]
+    ] : ["No common projects"]
   }
 
-  const handleClear = () => {
-      setFile("");
-      setArray([]);
-  }
 
   return (
     <div style={{ textAlign: "center", paddingTop: "40px" }}>
@@ -89,9 +85,9 @@ function App() {
           onChange={handleOnSubmit()}
           onInput={handleOnChange}
         />
-        <button onClick={() =>handleClear()}>CLEAR</button>
+       
       <br />
-        { array[0] === "No pairs" ? (<h1>No pairs</h1>) : (
+        { array[0] === "No common projects" ? (<h1>No pairs</h1>) : (
                 <table id='results'>
                 <thead>
                     <tr>
