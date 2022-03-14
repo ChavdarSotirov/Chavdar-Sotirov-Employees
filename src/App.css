@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+#results {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 50px;
+}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#results tr {
+  text-align: left;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
